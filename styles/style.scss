@@ -1,0 +1,458 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// Paleta de Colores
+$color1: rgb(169 116 254);
+$color2: white;
+$color3: black;
+$color4: #97D9E1;
+
+body {
+    background-color: $color1;
+    background-image: linear-gradient(0deg, $color1 0%, #97D9E1 100%);
+    background-size: cover;
+}
+.contenedor{
+    margin: 15px;
+}
+
+/* NavBar - CSS Inicio */
+header{
+    background-color: $color3!important;
+}
+.navbar{
+    background-color: $color3 !important;
+}
+.nav-item a{
+    color: $color1 !important;
+}
+.nav-item a:hover{
+    color: $color2 !important;
+}
+.navbar-toggler{ /* MENU HAMBURGUESA */
+    border: 2px solid $color1 !important;
+}
+.navbar-brand img{ /* LOGO HOME */
+    width: 50px;
+}
+.navbar-brand img:hover{
+    filter: grayscale(100%);
+    transition: filter 0.1s ease;
+}
+/* NavBar - CSS Final */
+
+/* Footer - CSS Inicio */
+footer{
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    padding: 10px;
+}
+footer p{
+    margin-top: 15px;
+}
+.navInferior{
+    margin: 15px;
+}
+.navInferior a{ /* LINKS SUPERIORES */
+    color: $color1;
+    padding: 5px;
+}
+.navInferior a:hover{
+    color: $color2;
+    text-decoration: none;
+}
+.redes a{ /* REDES SOCIALES */
+    color: $color1;
+    margin-top: 30px;
+    padding: 5px;
+}
+.redes a:hover{
+    color: $color2;
+    text-decoration: none;
+}
+/* Footer - CSS Final */
+
+/* Home - CSS Inicio */
+.menuHome{ /* MENU HOME - CSS Inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/microphone-2618102_1920.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color2;
+    height: 350px;
+    width: auto;
+    padding: 40px;
+}
+.menuHome h2{
+    color: $color1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+.botonHome{
+    background-color: $color1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px $color3 ;
+    border: 0px solid;
+}
+.botonHome:hover{
+    background-color: $color2;
+    box-shadow: 2px 2px 4px $color1 ;
+}
+.botonHome a{ /* MENU HOME - CSS Final */
+    color: black;
+    text-decoration: none;
+}
+.contenedorMenu{ /* MAIN CONTENT - CSS Final */
+    margin: 15px;
+    padding: 10px;
+    color: $color3;
+    background-color: $color2;
+    border: 2px solid $color3;
+    border-radius: 20px;
+    text-align: left;
+}
+.contenedorMenu iframe{ /* MAIN CONTENT - CSS Final */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+/* Home - CSS Final */
+
+/* Staff - CSS Inicio */
+.menuStaff{ /* MENU STAFF - CSS Inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/radio-4245029_1280\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 350px;
+    width: auto;
+    padding: 20px;
+    text-align: left;
+    padding: 40px;
+}
+.menuStaff h2{
+    color: $color1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+.botonStaff{
+    background-color: $color1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
+    border: 0px solid;
+}
+.botonStaff:hover{
+    background-color: $color2;
+    box-shadow: 2px 2px 4px $color1 ;
+    color: $color3;
+}
+.botonStaff a:hover{ /* MENU STAFF - CSS Final */
+    color: black;
+    text-decoration: none;
+}
+.botonStaff a{ /* MENU STAFF - CSS Final */
+    color: black;
+    text-decoration: none;
+}
+.row div{/* BODY STAFF - CSS Inicio */
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.col-md-4 img{
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contenedorStaff{
+    text-align: center;
+}
+.col-md-4 img:hover{
+    border-radius: 20px;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $color1;
+    opacity: 0;
+    transition: opacity 0s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay:hover {
+    opacity: 1;
+    border-radius: 20px;
+}
+.social-icons {
+    display: flex;
+}
+.social-icons i {
+    margin: 5px;
+    padding: 10px;
+    color: $color1;
+}
+.social-icons i:hover { 
+    color: $color2;
+}/* BODY STAFF - CSS Final */
+/* Staff - CSS Final */
+
+/* Episodios - CSS Inicio */
+.menuEpisod{ /* MENU EPISODIOS - CSS Inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/laptop-4838060_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color2;
+    height: 350px;
+    width: auto;
+    padding: 20px;
+}
+.menuEpisod h2{
+    color: $color1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+.botonEpisod{
+    background-color: $color1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
+    border: 0px solid;
+}
+.botonEpisod:hover{
+    background-color: yellowgreen;
+    box-shadow: 2px 2px 4px $color3 ;
+}
+.botonEpisod a:hover{
+    color: $color3;
+    text-decoration: none;
+}
+.botonEpisod a{ /* MENU EPISODIOS - CSS Final */
+    color: $color3;
+    text-decoration: none;
+}
+.imgEpisodios img{
+    padding: 10px;
+    border-radius: 20px;
+}
+.imgEpisodios:hover{
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+/* Episodios - CSS Final */
+
+/* Contacto - CSS Inicio */
+.menuContacto{ /* MENU SUSCRIPCION - CSS Inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/contact-2860030_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color2;
+    height: 350px;
+    width: auto;
+    padding: 20px;
+}
+.menuContacto h2{
+    color: $color1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+.botonContacto{
+    background-color: $color1 ;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
+    border: 0px solid;
+}
+.botonContacto:hover{
+    background-color: $color2 ;
+    box-shadow: 2px 2px 4px $color1;
+}
+.botonContacto a{
+    color: $color2;
+    text-decoration: none;
+} /* MENU SUSCRIPCION - CSS Final */
+.modal-content{ /* CARTEL CONTACTO - CSS INICIO */
+    background-color: $color3;
+    color: $color1;
+}
+.modal-header{
+    background-color: $color3;
+}
+.modal-body{
+    background: $color3;
+}
+.modal-footer{
+    background: $color3;
+}
+.btn-enviar {
+    color: $color3; /* Letra negra */
+    background-color: $color1 !important;
+    border: 0px !important;
+}
+.btn-enviar:hover {
+    background-color: $color2 !important;
+    border: 0px !important;
+    color: $color3 !important; /* Letra negra */
+    box-shadow: 2px 2px 4px $color1;
+}/* CARTEL CONTACTO - CSS FINAL */
+.row { /* BODY CONTACTO - CSS INICIO */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.column-20 {
+    flex: 0 0 100%;
+    background-color: $color3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 5px solid $color1;
+}
+.column-80 {
+    flex: 0 0 100%;
+    background-color: $color3;
+    color: $color1;
+    border: 5px solid $color1;
+}
+.contactoBox {
+    max-width: 100%;
+    padding: 20px;
+}
+.contactoBox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.inputBox {
+    margin-bottom: 10px;
+}
+.inputBox label {
+    display: block;
+    margin-bottom: 5px;
+}
+.inputBox input[type="text"],
+.inputBox input[type="email"],
+.inputBox textarea {
+    width: 100%;
+    padding: 8px;
+}
+.inputBox textarea {
+    height: 100px;
+}
+.inputBox input[type="submit"] {
+    background-color: $color1;
+    color: $color2;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.inputBox input[type="submit"]:hover {
+background-color: $color1;
+color: $color3;
+}
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+.contenedorContact{
+    margin: 17px;
+}
+/* Media queries para diseño responsive */
+@media (min-width: 768px) {
+.rowCom {
+flex-wrap: nowrap;
+}
+.column-20 {
+flex: 0 0 20%;
+}
+.column-80 {
+flex: 0 0 80%;
+}
+}/* BODY CONTACTO - CSS FINAL */
+/* Contacto - CSS Final */
+
+/* Suscripcion - CSS Inicio */
+.menuSuscrip{ /* MENU SUSCRIPCION - CSS Inicio */
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/subscribe-6281233_1920.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color2;
+    height: 350px;
+    width: auto;
+    padding: 20px;
+}
+.menuSuscrip h2{
+    color: $color1 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+}
+.botonSuscrip{
+    background-color: $color1;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px $color1;
+    border: 0px solid;
+}
+.botonSuscrip:hover{
+    background-color: $color2;
+    box-shadow: 2px 2px 4px $color1 ;
+}
+.botonSuscrip a:hover{
+    text-decoration: none;
+    color: $color3;
+}
+.botonSuscrip a{ /* MENU SUSCRIPCION - CSS Final */
+    color: $color3;
+    text-decoration: none;
+}
+.contenedorSub{ /* BOX SUSCRIPCIONES - CSS Inicio */
+    text-align: left;
+    margin: 15px;
+    background-color: $color2;
+    padding: 40px;
+    border: 2px solid $color3;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+.contenedorSub p{
+    margin-top: 10px;
+}
+.contenedorSub h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contenedorSub iframe{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.patreon{
+    text-align: center;
+}
+.subLink{
+    text-align: center;
+    color: $color2;
+    margin: 20px;
+    background-color: $color1;
+    padding: 5px;
+    font-weight: bold;
+}
+.subLink:hover{ /* BOX SUSCRIPCIONES - CSS Final */
+    background-color: $color3;
+    color: $color2;
+    text-decoration: none;
+}
+/* Suscripcion - CSS Final */
