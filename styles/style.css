@@ -6,13 +6,18 @@
 }
 
 body {
+  background-color: black;
+}
+
+main {
   background-color: rgb(169, 116, 254);
   background-image: linear-gradient(0deg, rgb(169, 116, 254) 0%, #97D9E1 100%);
   background-size: cover;
 }
 
 .contenedor {
-  margin: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* NavBar - CSS Inicio */
@@ -26,6 +31,13 @@ header {
 
 .nav-item a {
   color: rgb(169, 116, 254) !important;
+  font-size: 20px !important;
+}
+@media (max-width: 767px) {
+  .nav-item a {
+    text-align: center;
+    font-size: 16px !important;
+  }
 }
 
 .nav-item a:hover {
@@ -86,27 +98,49 @@ footer p {
 /* Footer - CSS Final */
 /* Home - CSS Inicio */
 .menuHome { /* MENU HOME - CSS Inicio */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../multimedia/microphone-2618102_1920.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%), linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%), url(../multimedia/microphone-2618102_1920.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   height: 350px;
   width: auto;
   padding: 40px;
+  position: relative;
+  color: white;
 }
 
-.menuHome h2 {
+.menuHome h1 {
   color: rgb(169, 116, 254) !important;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .menuHome h1 {
+    font-size: 30px;
+  }
+}
+
+.menuHome p {
+  color: white;
+}
+@media (max-width: 650px) {
+  .menuHome p {
+    font-size: 16px;
+  }
 }
 
 .botonHome {
   background-color: rgb(169, 116, 254);
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .botonHome {
+    font-size: 16px;
+  }
 }
 
 .botonHome:hover {
@@ -120,13 +154,11 @@ footer p {
 }
 
 .contenedorMenu { /* MAIN CONTENT - CSS Final */
-  margin: 15px;
   padding: 10px;
-  color: black;
-  background-color: white;
-  border: 2px solid black;
   border-radius: 20px;
-  text-align: left;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .contenedorMenu iframe { /* MAIN CONTENT - CSS Final */
@@ -136,21 +168,36 @@ footer p {
 /* Home - CSS Final */
 /* Staff - CSS Inicio */
 .menuStaff { /* MENU STAFF - CSS Inicio */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../multimedia/radio-4245029_1280\ \(1\).jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%), linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%), url(../multimedia/radio-4245029_1280\ \(1\).jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   height: 350px;
   width: auto;
-  padding: 20px;
-  text-align: left;
   padding: 40px;
+  position: relative;
+  color: white;
 }
 
-.menuStaff h2 {
+.menuStaff h1 {
   color: rgb(169, 116, 254) !important;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .menuStaff h1 {
+    font-size: 30px;
+  }
+}
+
+.menuStaff p {
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .menuStaff p {
+    font-size: 30px;
+  }
 }
 
 .botonStaff {
@@ -159,6 +206,12 @@ footer p {
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .botonStaff {
+    font-size: 16px;
+  }
 }
 
 .botonStaff:hover {
@@ -444,27 +497,50 @@ footer p {
 /* Contacto - CSS Final */
 /* Suscripcion - CSS Inicio */
 .menuSuscrip { /* MENU SUSCRIPCION - CSS Inicio */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../multimedia/subscribe-6281233_1920.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%), linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%), url(../multimedia/subscribe-6281233_1920.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   height: 350px;
   width: auto;
-  padding: 20px;
+  padding: 40px;
+  position: relative;
+  color: white;
 }
 
-.menuSuscrip h2 {
+.menuSuscrip h1 {
   color: rgb(169, 116, 254) !important;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .menuSuscrip h1 {
+    font-size: 16px;
+  }
+}
+
+.menuSuscrip p {
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .menuSuscrip p {
+    font-size: 16px;
+  }
 }
 
 .botonSuscrip {
   background-color: rgb(169, 116, 254);
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .botonSuscrip {
+    font-size: 16px;
+  }
 }
 
 .botonSuscrip:hover {
@@ -484,20 +560,35 @@ footer p {
 
 .contenedorSub { /* BOX SUSCRIPCIONES - CSS Inicio */
   text-align: left;
-  margin: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
   background-color: white;
   padding: 40px;
-  border: 2px solid black;
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 40px;
+}
+
+.boxBorder {
+  padding-bottom: 20px;
+  padding-top: 10px;
 }
 
 .contenedorSub p {
   margin-top: 10px;
 }
+@media (max-width: 650px) {
+  .contenedorSub p {
+    font-size: 16px;
+  }
+}
 
 .contenedorSub h2 {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+@media (max-width: 650px) {
+  .contenedorSub h2 {
+    font-size: 30px;
+  }
 }
 
 .contenedorSub iframe {
@@ -514,13 +605,19 @@ footer p {
   color: white;
   margin: 20px;
   background-color: rgb(169, 116, 254);
-  padding: 5px;
+  padding: 10px;
   font-weight: bold;
+  border-radius: 10px;
+}
+@media (max-width: 650px) {
+  .subLink {
+    font-size: 16px;
+  }
 }
 
 .subLink:hover { /* BOX SUSCRIPCIONES - CSS Final */
-  background-color: black;
-  color: white;
+  background-color: #97D9E1;
+  color: black;
   text-decoration: none;
 }
 

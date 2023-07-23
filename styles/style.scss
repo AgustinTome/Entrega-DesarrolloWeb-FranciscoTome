@@ -10,13 +10,22 @@ $color2: white;
 $color3: black;
 $color4: #97D9E1;
 
-body {
-    background-color: $color1;
-    background-image: linear-gradient(0deg, $color1 0%, #97D9E1 100%);
-    background-size: cover;
+// Font Size
+$Chico: 16px;
+$Mediano: 20px;
+$Grande: 30px;
+
+body{
+    background-color: $color3;
+}
+main {
+        background-color: $color1;
+        background-image: linear-gradient(0deg, $color1 0%, #97D9E1 100%);
+        background-size: cover;
 }
 .contenedor{
-    margin: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* NavBar - CSS Inicio */
@@ -28,6 +37,11 @@ header{
 }
 .nav-item a{
     color: $color1 !important;
+    font-size: $Mediano !important;
+    @media (max-width: 767px) {
+        text-align: center;
+        font-size: $Chico !important;
+    }
 }
 .nav-item a:hover{
     color: $color2 !important;
@@ -78,25 +92,43 @@ footer p{
 
 /* Home - CSS Inicio */
 .menuHome{ /* MENU HOME - CSS Inicio */
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/microphone-2618102_1920.jpg);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)95%),
+        linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%),
+        url(../multimedia/microphone-2618102_1920.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    color: $color2;
     height: 350px;
     width: auto;
     padding: 40px;
+    position: relative;
+    color: white;
 }
-.menuHome h2{
+.menuHome h1{
     color: $color1 !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+    margin-right: 15px;
+    @media (max-width: 650px) {
+        font-size: 30px;
+    }
+}
+.menuHome p{
+    color: $color2;
+    @media (max-width: 650px) {
+        font-size: 16px;
+    }
 }
 .botonHome{
     background-color: $color1;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px $color3 ;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
     border: 0px solid;
+    font-size: $Mediano;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
 .botonHome:hover{
     background-color: $color2;
@@ -107,13 +139,11 @@ footer p{
     text-decoration: none;
 }
 .contenedorMenu{ /* MAIN CONTENT - CSS Final */
-    margin: 15px;
     padding: 10px;
-    color: $color3;
-    background-color: $color2;
-    border: 2px solid $color3;
     border-radius: 20px;
-    text-align: left;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .contenedorMenu iframe{ /* MAIN CONTENT - CSS Final */
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
@@ -122,20 +152,33 @@ footer p{
 
 /* Staff - CSS Inicio */
 .menuStaff{ /* MENU STAFF - CSS Inicio */
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/radio-4245029_1280\ \(1\).jpg);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)95%),
+        linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%),
+        url(../multimedia/radio-4245029_1280\ \(1\).jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: white;
     height: 350px;
     width: auto;
-    padding: 20px;
-    text-align: left;
     padding: 40px;
+    position: relative;
+    color: white;
 }
-.menuStaff h2{
+.menuStaff h1{
     color: $color1 !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+    margin-right: 15px;
+    @media (max-width: 650px) {
+        font-size: $Grande;
+    }
+}
+.menuStaff p{
+    color: $color2;
+    font-size: 20px;
+    @media (max-width: 650px) {
+        font-size: $Grande;
+    }
 }
 .botonStaff{
     background-color: $color1;
@@ -143,6 +186,10 @@ footer p{
     border-radius: 10px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
     border: 0px solid;
+    font-size: $Mediano;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
 .botonStaff:hover{
     background-color: $color2;
@@ -388,25 +435,44 @@ flex: 0 0 80%;
 
 /* Suscripcion - CSS Inicio */
 .menuSuscrip{ /* MENU SUSCRIPCION - CSS Inicio */
-    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../multimedia/subscribe-6281233_1920.jpg);
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 0)95%),
+        linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%),
+        url(../multimedia/subscribe-6281233_1920.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    color: $color2;
     height: 350px;
     width: auto;
-    padding: 20px;
+    padding: 40px;
+    position: relative;
+    color: white;
 }
-.menuSuscrip h2{
+.menuSuscrip h1{
     color: $color1 !important;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 15);
+    margin-right: 15px;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
+}
+.menuSuscrip p{
+    color: $color2;
+    font-size: 20px;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
 .botonSuscrip{
     background-color: $color1;
     padding: 5px;
     border-radius: 10px;
-    box-shadow: 2px 2px 4px $color1;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 15) ;
     border: 0px solid;
+    font-size: $Mediano;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
 .botonSuscrip:hover{
     background-color: $color2;
@@ -422,18 +488,28 @@ flex: 0 0 80%;
 }
 .contenedorSub{ /* BOX SUSCRIPCIONES - CSS Inicio */
     text-align: left;
-    margin: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: $color2;
     padding: 40px;
-    border: 2px solid $color3;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    border-radius: 40px;
+}
+.boxBorder{
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 .contenedorSub p{
     margin-top: 10px;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
 .contenedorSub h2{
     margin-top: 20px;
     margin-bottom: 10px;
+    @media (max-width: 650px) {
+        font-size: $Grande;
+    }
 }
 .contenedorSub iframe{
     margin-top: 20px;
@@ -447,12 +523,17 @@ flex: 0 0 80%;
     color: $color2;
     margin: 20px;
     background-color: $color1;
-    padding: 5px;
+    padding: 10px;
     font-weight: bold;
+    border-radius: 10px;
+    @media (max-width: 650px) {
+        font-size: $Chico;
+    }
 }
+
 .subLink:hover{ /* BOX SUSCRIPCIONES - CSS Final */
-    background-color: $color3;
-    color: $color2;
+    background-color: $color4;
+    color: $color3;
     text-decoration: none;
 }
 /* Suscripcion - CSS Final */
