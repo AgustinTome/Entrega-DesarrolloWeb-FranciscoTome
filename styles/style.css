@@ -41,7 +41,7 @@ header {
 }
 
 .nav-item a:hover {
-  color: white !important;
+  color: #97D9E1 !important;
 }
 
 .navbar-toggler { /* MENU HAMBURGUESA */
@@ -80,7 +80,7 @@ footer p {
 }
 
 .navInferior a:hover {
-  color: white;
+  color: #97D9E1;
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ footer p {
 }
 
 .redes a:hover {
-  color: white;
+  color: #97D9E1;
   text-decoration: none;
 }
 
@@ -104,9 +104,16 @@ footer p {
   background-size: cover;
   height: 350px;
   width: auto;
-  padding: 40px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 35px;
   position: relative;
   color: white;
+}
+@media (max-width: 650px) {
+  .menuHome {
+    padding: 15px;
+  }
 }
 
 .menuHome h1 {
@@ -122,6 +129,7 @@ footer p {
 
 .menuHome p {
   color: white;
+  font-size: 20px;
 }
 @media (max-width: 650px) {
   .menuHome p {
@@ -132,6 +140,8 @@ footer p {
 .botonHome {
   background-color: rgb(169, 116, 254);
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
@@ -144,8 +154,8 @@ footer p {
 }
 
 .botonHome:hover {
-  background-color: white;
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px white;
 }
 
 .botonHome a { /* MENU HOME - CSS Final */
@@ -174,9 +184,16 @@ footer p {
   background-size: cover;
   height: 350px;
   width: auto;
-  padding: 40px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 35px;
   position: relative;
   color: white;
+}
+@media (max-width: 650px) {
+  .menuStaff {
+    padding: 15px;
+  }
 }
 
 .menuStaff h1 {
@@ -196,13 +213,15 @@ footer p {
 }
 @media (max-width: 650px) {
   .menuStaff p {
-    font-size: 30px;
+    font-size: 16px;
   }
 }
 
 .botonStaff {
   background-color: rgb(169, 116, 254);
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
@@ -215,8 +234,8 @@ footer p {
 }
 
 .botonStaff:hover {
-  background-color: white;
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px white;
   color: black;
 }
 
@@ -238,13 +257,12 @@ footer p {
 
 .col-md-4 img {
   border-radius: 20px;
-  padding: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .contenedorStaff {
   text-align: center;
+  margin-top: 15px;
 }
 
 .col-md-4 img:hover {
@@ -255,6 +273,11 @@ footer p {
   position: relative;
   display: inline-block;
   border-radius: 20px;
+}
+@media (max-width: 650px) {
+  .image-container {
+    margin: 15px;
+  }
 }
 
 .overlay {
@@ -294,32 +317,64 @@ footer p {
 /* Staff - CSS Final */
 /* Episodios - CSS Inicio */
 .menuEpisod { /* MENU EPISODIOS - CSS Inicio */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../multimedia/laptop-4838060_1920.jpg);
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%), linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%), url(../multimedia/laptop-4838060_1920.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
   height: 350px;
   width: auto;
-  padding: 20px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 35px;
+  position: relative;
+  color: white;
+}
+@media (max-width: 650px) {
+  .menuEpisod {
+    padding: 15px;
+  }
 }
 
-.menuEpisod h2 {
+.menuEpisod h1 {
   color: rgb(169, 116, 254) !important;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .menuEpisod h1 {
+    font-size: 30px;
+  }
+}
+
+.menuEpisod p {
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .menuEpisod p {
+    font-size: 16px;
+  }
 }
 
 .botonEpisod {
   background-color: rgb(169, 116, 254);
   padding: 5px;
+  padding-right: 15px;
+  padding-left: 15px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .botonEpisod {
+    font-size: 16px;
+  }
 }
 
 .botonEpisod:hover {
-  background-color: yellowgreen;
-  box-shadow: 2px 2px 4px black;
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px white;
 }
 
 .botonEpisod a:hover {
@@ -330,6 +385,19 @@ footer p {
 .botonEpisod a { /* MENU EPISODIOS - CSS Final */
   color: black;
   text-decoration: none;
+}
+
+.col-md-4 {
+  padding: 20px !important;
+}
+
+.imgEpisodios {
+  margin: 100px;
+}
+@media (max-width: 1600px) {
+  .imgEpisodios {
+    margin: 10px;
+  }
 }
 
 .imgEpisodios img {
@@ -344,69 +412,108 @@ footer p {
 
 /* Episodios - CSS Final */
 /* Contacto - CSS Inicio */
-.menuContacto { /* MENU SUSCRIPCION - CSS Inicio */
-  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0)), url(../multimedia/contact-2860030_1920.jpg);
+.menuContacto { /* MENU CONTACTO - CSS Inicio */
+  background-image: linear-gradient(rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 95%), linear-gradient(to top, rgb(151, 217, 225) 5%, rgba(41, 245, 184, 0) 95%), url(../multimedia/laptop-4838060_1920.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgb(169, 116, 254);
   height: 350px;
   width: auto;
-  padding: 20px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 35px;
+  position: relative;
+  color: white;
+}
+@media (max-width: 650px) {
+  .menuContacto {
+    padding: 15px;
+  }
 }
 
-.menuContacto h2 {
+.menuContacto h1 {
   color: rgb(169, 116, 254) !important;
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  margin-right: 15px;
+}
+@media (max-width: 650px) {
+  .menuContacto h1 {
+    font-size: 30px;
+  }
+}
+
+.menuContacto p {
+  color: white;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .menuContacto p {
+    font-size: 16px;
+  }
 }
 
 .botonContacto {
   background-color: rgb(169, 116, 254);
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
+  font-size: 20px;
+}
+@media (max-width: 650px) {
+  .botonContacto {
+    font-size: 16px;
+  }
 }
 
 .botonContacto:hover {
-  background-color: white;
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px white;
 }
 
 .botonContacto a {
   color: white;
   text-decoration: none;
-} /* MENU SUSCRIPCION - CSS Final */
+} /* MENU CONTACTO - CSS Final */
 .modal-content { /* CARTEL CONTACTO - CSS INICIO */
-  background-color: black;
-  color: rgb(169, 116, 254);
+  background-color: white;
+  color: black;
 }
 
 .modal-header {
-  background-color: black;
+  background-color: white;
 }
 
 .modal-body {
-  background: black;
+  background: white;
 }
 
 .modal-footer {
-  background: black;
+  background: white;
 }
 
 .btn-enviar {
-  color: black; /* Letra negra */
+  color: black;
   background-color: rgb(169, 116, 254) !important;
   border: 0px !important;
 }
 
 .btn-enviar:hover {
-  background-color: white !important;
+  background-color: #97D9E1 !important;
   border: 0px !important;
-  color: black !important; /* Letra negra */
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  color: black !important;
+  box-shadow: 2px 2px 4px black;
 } /* CARTEL CONTACTO - CSS FINAL */
-.row { /* BODY CONTACTO - CSS INICIO */
+.contenedorContact { /* BODY CONTACTO - CSS INICIO */
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 20px;
+}
+
+.row {
   display: flex;
   flex-wrap: wrap;
   text-align: left;
@@ -414,19 +521,23 @@ footer p {
 
 .column-20 {
   flex: 0 0 100%;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  border: 5px solid rgb(169, 116, 254);
+  border-radius: 40px;
+}
+
+.column-20 img {
+  border-radius: 40px;
 }
 
 .column-80 {
   flex: 0 0 100%;
-  background-color: black;
-  color: rgb(169, 116, 254);
-  border: 5px solid rgb(169, 116, 254);
+  background-color: white;
+  color: black;
+  border-radius: 40px;
 }
 
 .contactoBox {
@@ -453,6 +564,8 @@ footer p {
 .inputBox textarea {
   width: 100%;
   padding: 8px;
+  background-color: white;
+  border-radius: 10px;
 }
 
 .inputBox textarea {
@@ -464,22 +577,22 @@ footer p {
   color: white;
   border: none;
   padding: 10px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .inputBox input[type=submit]:hover {
-  background-color: rgb(169, 116, 254);
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px black;
+}
+
+.inputBox input[type=submit]:hover {
   color: black;
 }
 
 .responsive-img {
   max-width: 100%;
   height: auto;
-}
-
-.contenedorContact {
-  margin: 17px;
 }
 
 /* Media queries para diseño responsive */
@@ -503,9 +616,16 @@ footer p {
   background-size: cover;
   height: 350px;
   width: auto;
-  padding: 40px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-right: 35px;
   position: relative;
   color: white;
+}
+@media (max-width: 650px) {
+  .menuSuscrip {
+    padding: 15px;
+  }
 }
 
 .menuSuscrip h1 {
@@ -515,7 +635,7 @@ footer p {
 }
 @media (max-width: 650px) {
   .menuSuscrip h1 {
-    font-size: 16px;
+    font-size: 30px;
   }
 }
 
@@ -532,6 +652,8 @@ footer p {
 .botonSuscrip {
   background-color: rgb(169, 116, 254);
   padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   border-radius: 10px;
   box-shadow: 2px 2px 4px rgb(0, 0, 0);
   border: 0px solid;
@@ -544,8 +666,8 @@ footer p {
 }
 
 .botonSuscrip:hover {
-  background-color: white;
-  box-shadow: 2px 2px 4px rgb(169, 116, 254);
+  background-color: #97D9E1;
+  box-shadow: 2px 2px 4px white;
 }
 
 .botonSuscrip a:hover {
@@ -587,7 +709,9 @@ footer p {
 }
 @media (max-width: 650px) {
   .contenedorSub h2 {
-    font-size: 30px;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-bottom: 10px;
   }
 }
 
@@ -598,10 +722,6 @@ footer p {
 
 .patreon {
   text-align: center;
-}
-
-.subLink {
-  text-align: center;
   color: white;
   margin: 20px;
   background-color: rgb(169, 116, 254);
@@ -610,12 +730,22 @@ footer p {
   border-radius: 10px;
 }
 @media (max-width: 650px) {
-  .subLink {
-    font-size: 16px;
+  .patreon {
+    margin: 10px;
   }
 }
 
-.subLink:hover { /* BOX SUSCRIPCIONES - CSS Final */
+.patreon a {
+  color: black;
+  text-decoration: none;
+}
+
+.patreon a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.patreon:hover { /* BOX SUSCRIPCIONES - CSS Final */
   background-color: #97D9E1;
   color: black;
   text-decoration: none;
