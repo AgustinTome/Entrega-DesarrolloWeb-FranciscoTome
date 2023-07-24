@@ -171,10 +171,134 @@ footer p {
   margin-right: 15px;
 }
 
-.contenedorMenu iframe { /* MAIN CONTENT - CSS Final */
-  box-shadow: 0 0 20px rgb(0, 0, 0);
+.rowMenu {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
+.columnMenu-20 {
+  flex: 20%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 10px;
+  padding: 30px;
+}
+
+.columnMenu-20 h3:hover {
+  color: #97D9E1;
+}
+
+.columnMenu-20 img {
+  border-radius: 10px;
+}
+
+.columnMenu-20 p {
+  margin-top: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.columnMenu-80 {
+  flex: 75%;
+  background-color: white;
+  text-align: left;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.columnMenu-80 iframe {
+  margin-top: 50px;
+}
+
+.reproduccion {
+  margin-top: 20px;
+}
+
+.playEpisode {
+  background-color: black;
+  color: white;
+  padding: 7px;
+  margin-right: 10px;
+}
+
+.playEpisode i {
+  margin-right: 10px;
+}
+
+.playEpisode:hover {
+  background-color: #97D9E1;
+  color: black;
+  text-decoration: none;
+}
+
+.suscribeBtn {
+  color: black;
+  padding: 5px;
+  border: 3px solid black;
+}
+
+.suscribeBtn:hover {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 5px;
+  border: 3px solid black;
+}
+
+.rowBot {
+  margin: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+.masEpisodios {
+  display: inline-block;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.masEpisodios a {
+  text-decoration: none;
+  color: black;
+}
+
+.masEpisodios:hover {
+  background-color: #97D9E1;
+}
+
+@media screen and (max-width: 1290px) {
+  .columnMenu-20 {
+    display: none;
+  }
+  .contenedorMenu {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .columnMenu-80 h1 {
+    font-size: 30px;
+  }
+  .columnMenu-80 h3 {
+    font-size: 20px;
+  }
+  .suscribeBtn {
+    display: none;
+  }
+  .masEpisodios {
+    padding: 5px;
+  }
+  .masEpisodios h4 {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
 /* Home - CSS Final */
 /* Staff - CSS Inicio */
 .menuStaff { /* MENU STAFF - CSS Inicio */

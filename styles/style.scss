@@ -153,9 +153,119 @@ footer p{
     margin-left: 15px;
     margin-right: 15px;
 }
-.contenedorMenu iframe{ /* MAIN CONTENT - CSS Final */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+.rowMenu {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
 }
+.columnMenu-20 {
+    flex: 20%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: $color2;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 30px;
+}
+.columnMenu-20 h3:hover{
+    color: $color4;
+}
+.columnMenu-20 img{
+    border-radius: 10px;
+}
+.columnMenu-20 p{
+    margin-top: 10px;
+    padding: 20px;
+    font-size: $Mediano;
+    text-align: left;
+}
+.columnMenu-80 {
+    flex: 75%;
+    background-color: $color2;
+    text-align: left;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 20px;
+}
+.columnMenu-80 iframe{
+    margin-top: 50px;
+}
+.reproduccion{
+    margin-top: 20px;
+}
+.playEpisode{
+    background-color: $color3;
+    color: $color2;
+    padding: 7px;
+    margin-right: 10px;
+}
+.playEpisode i{
+    margin-right: 10px;
+}
+.playEpisode:hover{
+    background-color: $color4;
+    color: $color3;
+    text-decoration: none;
+}
+.suscribeBtn{
+    color: $color3;
+    padding: 5px;
+    border: 3px solid $color3;
+}
+.suscribeBtn:hover{
+    color: $color2;
+    background-color: $color3;
+    text-decoration: none;
+    padding: 5px;
+    border: 3px solid $color3;
+}
+.rowBot {
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+.masEpisodios {
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+.masEpisodios a {
+    text-decoration: none;
+    color: black; 
+}
+.masEpisodios:hover{
+    background-color: $color4;
+}
+
+@media screen and (max-width: 1290px) {
+    .columnMenu-20 {
+        display: none;
+    }
+    .contenedorMenu {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .columnMenu-80 h1{
+        font-size: $Grande;
+    }
+    .columnMenu-80 h3{
+        font-size: $Mediano;
+    }
+    .suscribeBtn{
+        display: none;
+    }
+    .masEpisodios{
+        padding: 5px;
+    }
+    .masEpisodios h4{
+        font-size: $Chico;
+        padding: 5px;
+    }
+}
+
 /* Home - CSS Final */
 
 /* Staff - CSS Inicio */
